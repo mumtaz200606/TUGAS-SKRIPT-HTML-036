@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Konversi Nilai Angka ke Huruf</title>
+</head>
+
+<body>
+    <script>
+        var input = prompt("Masukkan nilai (0-100):", "");
+        var nilai = Number(input); // ubah ke angka
+
+        var hasil;
+
+        if (nilai >= 0 && nilai <= 20) {
+            hasil = "E";
+        } else if (nilai >= 21 && nilai <= 39) {
+            hasil = "D";
+        } else if (nilai >= 40 && nilai <= 64) {
+            hasil = "C";
+        } else if (nilai >= 65 && nilai <= 79) {
+            hasil = "B";
+        } else if (nilai >= 80 && nilai <= 100) {
+            hasil = "A";
+        } else {
+            hasil = "Nilai tidak valid!";
+        }
+
+        document.write("Nilai angka: " + nilai + "<br>");
+        document.write("Nilai huruf: " + hasil);
+    </script>
+</body>
+
+</html>
