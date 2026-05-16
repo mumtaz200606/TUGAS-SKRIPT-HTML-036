@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Operator Ternary (?)</title>
+</head>
+
+<body>
+
+    <script>
+        // Konversi input menjadi angka agar perbandingan matematika akurat
+        var nilai = parseInt(prompt("Nilai (0-100): ", 0));
+        var hasil = (nilai < 21) ? "E" :
+            (nilai < 40) ? "D" :
+                (nilai < 65) ? "C" :
+                    (nilai < 80) ? "B" : "A";
+
+        document.write("Nilai anda: " + hasil);
+    </script>
+
+</body>
+
+</html>
